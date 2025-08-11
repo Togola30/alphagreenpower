@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaGreenPower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f8f9fa; color: #333; }
+    header { background-image: url('accueil.jpg'); background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: white; }
+    header h1 { font-size: 48px; margin-bottom: 10px; }
+    header p { font-size: 20px; margin-bottom: 20px; }
+    .btn { background-color: #ffcc00; color: #000; padding: 12px 25px; font-weight: bold; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; }
+    nav { background: #026c4f; padding: 10px 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    .equipe, .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 30px; }
+    .carte, .projet { background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 20px; text-align: center; }
+    .carte img, .projet img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+    footer { background: #222; color: #bbb; text-align: center; padding: 30px 20px; }
+    form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    iframe { width: 100%; height: 300px; border: 0; margin-top: 30px; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 32px; }
+      header p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AlphaGreenPower</h1>
+  <p>Fiabilité solaire, puissance durable.</p>
+  <a href="#contact" class="btn">Demander un devis</a>
+</header>
+
+<nav>
+  <a href="#entreprise">Entreprise</a>
+  <a href="#equipe">Équipe</a>
+  <a href="#services">Services</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="entreprise">
+  <h2>À propos de l'entreprise</h2>
+  <h3 style="margin-top: 20px;">🔷 Historique</h3>
+  <p style="margin: 15px 0;">
+    Fondée par <strong>Alpha Togola</strong>, AlphaGreenPower est née de la volonté d’apporter une solution durable et accessible au déficit énergétique dans notre région. En observant les besoins croissants en électricité fiable et propre, l'entreprise s’est spécialisée dans les technologies solaires tout en conservant un savoir-faire solide en électricité générale.
+  </p>
+  <h3>🎯 Mission</h3>
+  <p style="margin: 15px 0;">
+    Fournir des solutions énergétiques innovantes, fiables et écologiques pour améliorer l’accès à l’électricité, réduire la dépendance aux énergies fossiles et contribuer au développement durable.
+  </p>
+  <h3>👁️ Vision</h3>
+  <p style="margin: 15px 0;">
+    Être un leader de la transition énergétique en Afrique de l’Ouest, en démocratisant l’accès à l’énergie solaire et en garantissant des installations sûres, performantes et adaptées aux besoins de chaque client.
+  </p>
+  <h3>💡 Valeurs</h3>
+  <ul style="margin: 15px 0 30px 20px;">
+    <li><strong>Innovation</strong> : Rechercher des solutions modernes et efficaces.</li>
+    <li><strong>Durabilité</strong> : Favoriser les énergies propres pour un avenir plus vert.</li>
+    <li><strong>Professionnalisme</strong> : Assurer un service de qualité avec une équipe qualifiée.</li>
+    <li><strong>Proximité</strong> : Être à l’écoute des besoins de nos clients.</li>
+    <li><strong>Responsabilité</strong> : Agir avec éthique et dans le respect de l’environnement.</li>
+  </ul>
+</section>
+
+<section id="services">
+  <h2>Nos Services</h2>
+  <ul style="margin: 20px 0 0 20px;">
+    <li>Conception et installation de systèmes solaires photovoltaïques</li>
+    <li>Maintenance et dépannage de systèmes solaires</li>
+    <li>Électricité générale (résidentiel, tertiaire, industriel)</li>
+    <li>Études techniques et dimensionnement</li>
+    <li>Accompagnement pour appels d’offres et projets d’envergure</li>
+  </ul>
+</section>
+
+<section id="realisations">
+  <h2>Nos Réalisations</h2>
+  <p style="margin-top: 15px;">Nous avons accompagné de nombreux particuliers, entreprises et institutions dans la mise en place de leurs projets solaires et électriques. (Ajoutez ici des images ou témoignages si vous en avez.)</p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div class="projet">
+      <img src="projet1.jpg" alt="Projet solaire résidentiel">
+      <h3>Installation Résidentielle</h3>
+      <p>Installation solaire pour une maison à Hamdalaye. Système autonome 3kW.</p>
+    </div>
+    <div class="projet">
+      <img src="projet2.jpg" alt="Projet pour une entreprise">
+      <h3>Entreprise Locale</h3>
+      <p>Système hybride pour PME à Bamako, réduction de 60% de la facture électrique.</p>
+    </div>
+    <div class="projet">
+      <img src="projet3.jpg" alt="Installation solaire publique">
+      <h3>Infrastructure Publique</h3>
+      <p>Installation solaire pour un centre de santé rural. Fourniture stable 24/7.</p>
+    </div>
+  </div>
+</section>
+
+<section id="equipe">
+  <h2>Notre Équipe</h2>
+  <div class="equipe">
+    <div class="carte">
+      <img src="pdg.jpg" alt="Alpha Togola">
+      <h3>Alpha Togola</h3>
+      <p><strong>Président Directeur Général</strong></p>
+      <p>Fondateur d’AlphaGreenPower, Alpha Togola est un entrepreneur passionné par l’innovation énergétique.</p>
+    </div>
+    <div class="carte">
+      <img src="commerciale.jpg" alt="Nassira Konaté">
+      <h3>Nassira Konaté</h3>
+      <p><strong>Directrice Commerciale</strong></p>
+      <p>Experte en développement commercial, Nassira Konaté pilote la stratégie de croissance et la relation client.</p>
+    </div>
+    <div class="carte">
+      <img src="rh.jpg" alt="Mme Simpara Mariam Diallo">
+      <h3>Mme Simpara Mariam Diallo</h3>
+      <p><strong>Responsable RH</strong></p>
+      <p>Elle veille à l’harmonie sociale et au développement des compétences de l’équipe.</p>
+    </div>
+    <div class="carte">
+      <img src="technicien.jpg" alt="Drissa Ballo">
+      <h3>Drissa Ballo</h3>
+      <p><strong>Technicien Principal</strong></p>
+      <p>Responsable des installations techniques avec un haut niveau d’expertise terrain.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="margin-top: 20px;">
+    Téléphone : <strong>75577941</strong><br>
+    Email : <strong>Knassi1@yahoo.fr</strong>
+  </p>
+  <form>
+    <input type="text" placeholder="Nom" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Votre message..." rows="5" required></textarea>
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
+  <iframe src="https://www.google.com/maps?q=Hamdalaye+ACI+2000&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 AlphaGreenPower. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
